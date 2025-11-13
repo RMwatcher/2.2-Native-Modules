@@ -8,7 +8,7 @@ const fs = require("fs");
 
 // read what's on message.txt instead of writing in message.txt
 // add "utf-8" inside the option field
-fs.readFile("message.txt", "utf-8", (err, data) =>{
+fs.readFile("./message.txt", "utf-8", (err, data) =>{
     if (err) throw err;
     console.log(data);
 });
